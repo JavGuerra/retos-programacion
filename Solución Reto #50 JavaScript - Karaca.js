@@ -35,7 +35,7 @@ function karacaAlgorithm(str = "") {
         const control = "aca";
 
         if (
-            str.slice(0, 3) === control &&
+            str.startsWith(control) &&
             str.match(/\d/g) &&
             str.length > control.length
         ) {
