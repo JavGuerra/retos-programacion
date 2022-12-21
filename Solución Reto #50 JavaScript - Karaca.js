@@ -25,9 +25,9 @@
  */
 function karacaAlgorithm(str = "") {
 
-    if (str === null || str === undefined) str = "";
+    str = str ?? "";
 
-    else if (typeof str === "string" && str.trim().length && str.match(/\D/g)) {
+    if (typeof str === "string" && str.trim().length && str.match(/\D/g)) {
 
         str = str.trim().toLowerCase().split("").reverse().join("");
 
@@ -57,6 +57,7 @@ function karacaAlgorithm(str = "") {
 }
 
 // Testing
-const str = "Solving an equation produces, instantly, great euphoria.";
+const str = null;
+//const str = "Solving an equation produces, instantly, great euphoria.";
 console.log(karacaAlgorithm(str));
 console.log(karacaAlgorithm(karacaAlgorithm(str)));
