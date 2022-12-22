@@ -45,11 +45,15 @@ function arabic2Roman(arabic)
 const str = '12.3';
 const num = 12.3;
 const nu2 = 4000;
+const nu3 = 0;
+const nu4 = -1;
 const min = 1;
 const max = 3999;
 console.log(str, arabic2Roman(str));
 console.log(num, arabic2Roman(num));
 console.log(nu2, arabic2Roman(nu2));
+console.log(nu3, arabic2Roman(nu3));
+console.log(nu4, arabic2Roman(nu4));
 console.log(min, arabic2Roman(min));
 console.log(max, arabic2Roman(max));
 for (let i = 1; i <= 5; i++) {
