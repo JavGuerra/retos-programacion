@@ -1,10 +1,4 @@
 /*
- * Enunciado: Crea una función que sea capaz de encriptar y desencriptar texto
- * utilizando el algoritmo de encriptación de Karaca. 
- * (Debes buscar información sobre él)
- * 
- * 2022-12-15
- *
  * Make a function that encrypts a given input with these steps:
  * Input: “apple”
  * Step 1: Reverse the input: “elppa”
@@ -57,7 +51,6 @@ function karacaAlgorithm(str = "") {
 }
 
 // Testing
-const str = null;
-//const str = "Solving an equation produces, instantly, great euphoria.";
+const str = "Solving an equation produces, instantly, great euphoria.";
 console.log(karacaAlgorithm(str));
 console.log(karacaAlgorithm(karacaAlgorithm(str)));
