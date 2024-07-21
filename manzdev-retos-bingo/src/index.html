@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bingo</title>
+  <link rel="icon" href="./assets/img/favicon.svg" sizes="any" type="image/svg+xml">
+  <link rel="stylesheet" href="./index.scss">
+  <script defer type="module" src="./index.js"></script>
+</head>
+
+<body>
+  <div id="contenedor">
+    <header>
+      <h1>BINGO</h1>
+    </header>
+
+    <main>
+      <section id="cartones">
+        <div id="carton1"></div>
+        <div id="bola">
+          <span>Saca número</span>
+        </div>
+        <div id="carton2"></div>
+      </section>
+
+      <section id="bolas"></section>
+    </main>
+
+    <dialog id="error" role="alertdialog" aria-labelledby="title" aria-describedby="errMsg">
+      <div role="document" tabindex="0">
+        <h3 id="title">¡Atención!</h3>
+        <p id="errMsg"></p>
+        <button id="ok">OK</button>
+      </div>
+    </dialog>
+
+    <footer>
+      <p>
+        <small>
+          Por: <a href="https://javguerra.github.io/">Javier Guerra</a>
+        </small>
+      </p>
+    </footer>
+</div>
+</body>
+
+</html>
